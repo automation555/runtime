@@ -12,7 +12,7 @@ class B : A {
 
 class ThreadRunner {
 	public Int32 Inc2(Int32 a) { return Inc1(a); }
-	public Int32 Inc1(Int32 a) { return a + 2; }
+	public Int32 Inc1(Int32 a) { a=a+3;return a + 2; }
 	public void PrintA(A a) { a.Print(); ((B)a).Print(); }
 	public void Run() {
 		Console.WriteLine("Running thread" );
